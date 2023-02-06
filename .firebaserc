@@ -1,0 +1,36 @@
+{
+  "projects": {
+    "default": "web-app-hands-on-nwt-test",
+    "testnet": "web-app-hands-on-nwt-test",
+    "mainnet": "web-app-hands-on-nwt"
+  },
+  "targets": {
+    "web-app-hands-on-nwt-test": {
+      "hosting": {
+        "web": [
+          "web-app-hands-on-nwt-test"
+        ],
+        "admin": [
+          "admin-web-app-hands-on-nwt-test"
+        ],
+        "lp": [
+          "lp-web-app-hands-on-nwt-test"
+        ]
+      }
+    },
+    "web-app-hands-on-nwt": {
+      "hosting": {
+        "web": [
+          "web-app-hands-on-nwt"
+        ],
+        "admin": [
+          "admin-web-app-hands-on-nwt"
+        ],
+        "lp": [
+          "lp-web-app-hands-on-nwt"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
