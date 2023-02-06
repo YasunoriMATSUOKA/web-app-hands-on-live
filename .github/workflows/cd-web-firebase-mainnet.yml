@@ -34,6 +34,10 @@ jobs:
       - run: npm run build:lp
       - run: npm run test:lp -- --browsers=ChromeHeadless --no-watch --no-progress
       - run: npm run e2e:lp:ci
-      - run: npm ci --prefix ./functions
-      - run: npm run --prefix ./functions test
+      - run: npm ci
+        working-directory: ./functions
+      - run: npm run build
+        working-directory: ./functions
+      - run: npm run test
+        working-directory: ./functions
       - run: npx firebase deploy --project=mainnet --token=${{ secrets.FIREBASE_TOKEN }} --force
